@@ -1,4 +1,7 @@
-# Kyojitsu
+<h1>
+  <img src="docs/assets/kyojitsu-logo.svg" width="34" align="center">
+  Kyojitsu
+</h1>
 
 Kyojitsu es una plataforma local de **AI Red Team** para evaluar guardrails y APIs de aplicaciones basadas en LLM mediante campañas reproducibles, generación adaptativa de variantes, mapeo contra marcos como **OWASP Top 10 for LLM Applications 2025** y **MITRE ATLAS**, evidencia por solicitud, un dashboard HTML y un reporte ejecutivo PDF.
 
