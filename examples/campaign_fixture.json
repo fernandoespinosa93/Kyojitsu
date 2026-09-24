@@ -1,0 +1,38 @@
+{
+  "name": "Kyojitsu v3 - validación sintética",
+  "authorization_confirmed": true,
+  "target": {
+    "type": "fixture"
+  },
+  "selection": {
+    "frameworks": [
+      "owasp_llm_2025",
+      "mitre_atlas"
+    ],
+    "category_ids": [
+      "LLM01",
+      "INITIAL_ACCESS",
+      "DEFENSE_EVASION"
+    ],
+    "technique_ids": [
+      "direct_prompt_injection",
+      "prompt_obfuscation"
+    ],
+    "seeds_per_technique": 2,
+    "include_benign_controls": true,
+    "secret_indicators": []
+  },
+  "evolution": {
+    "generations": 3,
+    "population_size": 12,
+    "elite_fraction": 0.25,
+    "random_seed": 88,
+    "max_prompt_chars": 6000,
+    "benign_control_limit": 20,
+    "request_interval_seconds": 0.1
+  },
+  "limits": {
+    "max_requests": 50
+  },
+  "simulation_confirmed": true
+}

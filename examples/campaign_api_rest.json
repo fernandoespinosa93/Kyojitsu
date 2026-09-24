@@ -1,0 +1,72 @@
+{
+  "name": "API REST autorizada",
+  "authorization_confirmed": false,
+  "target": {
+    "type": "generic",
+    "estimated_cost_per_request": 0,
+    "profile": {
+      "name": "mi-api",
+      "url": "https://api.example.invalid/chat",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      "body_template": {
+        "prompt": "{{prompt}}",
+        "candidate_id": "{{candidate_id}}",
+        "technique": "{{technique_id}}"
+      },
+      "response": {
+        "answer_path": "answer",
+        "blocked_path": "blocked",
+        "reason_path": "reason",
+        "stage_path": "stage",
+        "risk_score_path": "risk_score",
+        "attack_type_path": "attack_type",
+        "provider_cost_path": "usage.cost_usd"
+      },
+      "strict_instrumentation": true,
+      "blocked_http_statuses": [],
+      "output_block_values": [
+        "output",
+        "output_blocked"
+      ],
+      "timeout_seconds": 10,
+      "policy_oracle_confirmed": false
+    }
+  },
+  "selection": {
+    "frameworks": [
+      "owasp_llm_2025",
+      "mitre_atlas"
+    ],
+    "category_ids": [
+      "LLM01",
+      "INITIAL_ACCESS",
+      "DEFENSE_EVASION"
+    ],
+    "technique_ids": [
+      "direct_prompt_injection",
+      "prompt_obfuscation"
+    ],
+    "seeds_per_technique": 2,
+    "include_benign_controls": true,
+    "secret_indicators": []
+  },
+  "evolution": {
+    "generations": 3,
+    "population_size": 10,
+    "elite_fraction": 0.3,
+    "random_seed": 88,
+    "max_prompt_chars": 6000,
+    "benign_control_limit": 20,
+    "request_interval_seconds": 0.1
+  },
+  "limits": {
+    "max_requests": 45
+  },
+  "generator": {
+    "mode": "rules"
+  }
+}

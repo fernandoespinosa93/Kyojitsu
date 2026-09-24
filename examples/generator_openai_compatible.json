@@ -1,0 +1,9 @@
+{
+  "mode": "openai_compatible",
+  "url": "https://api.openai.com/v1/chat/completions",
+  "model": "ELIGE_UN_MODELO_DISPONIBLE",
+  "api_key": "",
+  "max_calls": 100,
+  "timeout_seconds": 90,
+  "share_test_data_confirmed": false
+}

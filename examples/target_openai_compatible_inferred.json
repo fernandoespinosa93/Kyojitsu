@@ -1,0 +1,29 @@
+{
+  "name": "openai-compatible-example",
+  "url": "https://your-authorized-endpoint.example/v1/chat/completions",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer ${ENV:KYOJITSU_API_KEY}"
+  },
+  "body_template": {
+    "model": "your-model",
+    "messages": [
+      {"role": "user", "content": "{{prompt}}"}
+    ]
+  },
+  "response": {
+    "answer_path": "choices.0.message.content",
+    "blocked_path": null,
+    "reason_path": null,
+    "stage_path": null,
+    "risk_score_path": null,
+    "attack_type_path": null,
+    "provider_cost_path": null,
+    "success_path": null
+  },
+  "strict_instrumentation": false,
+  "blocked_http_statuses": [400, 403, 422],
+  "output_block_values": ["output", "output_blocked"],
+  "timeout_seconds": 60
+}

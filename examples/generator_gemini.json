@@ -1,0 +1,9 @@
+{
+  "mode": "gemini",
+  "url": "https://generativelanguage.googleapis.com/v1beta/interactions",
+  "model": "ELIGE_UN_MODELO_DESDE_STUDIO",
+  "api_key": "",
+  "max_calls": 100,
+  "timeout_seconds": 90,
+  "share_test_data_confirmed": false
+}

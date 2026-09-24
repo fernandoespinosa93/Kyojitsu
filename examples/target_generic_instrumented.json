@@ -1,0 +1,39 @@
+{
+  "name": "guardrail-lab",
+  "url": "https://lab.example/api/chat",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Authorization": "Bearer ${ENV:KYOJITSU_API_KEY}"
+  },
+  "body_template": {
+    "prompt": "{{prompt}}",
+    "session_id": "{{session_id}}",
+    "metadata": {
+      "candidate_id": "{{candidate_id}}",
+      "run_id": "{{run_id}}",
+      "technique_id": "{{technique_id}}"
+    }
+  },
+  "response": {
+    "answer_path": "answer",
+    "blocked_path": "guardrail.blocked",
+    "reason_path": "guardrail.reason",
+    "stage_path": "guardrail.stage",
+    "risk_score_path": "guardrail.risk_score",
+    "attack_type_path": "guardrail.attack_type",
+    "provider_cost_path": "usage.cost_usd",
+    "success_path": "evaluation.success"
+  },
+  "preflight": {
+    "url": "https://lab.example/health",
+    "json_path": "guardrails.status",
+    "equals": "active"
+  },
+  "strict_instrumentation": true,
+  "blocked_http_statuses": [403, 422],
+  "output_block_values": ["output", "output_blocked"],
+  "timeout_seconds": 30,
+  "session_id": null
+}
