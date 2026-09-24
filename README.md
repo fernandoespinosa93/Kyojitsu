@@ -276,4 +276,4 @@ Consulta [CONTRIBUTING.md](CONTRIBUTING.md). Si una IA o agente va a modificar e
 
 ## Licencia
 
-Temporary public release: This repository is publicly accessible for demonstration and review associated with the Kyojitsu presentation. Public availability does not grant an open-source license. See [LICENCE](LICENCE).
+Temporary public release: This repository is publicly accessible for demonstration and review associated with the Kyojitsu presentation. Public availability does not grant an open-source license. See [LICENSE](LICENSE).
