@@ -1,7 +1,3 @@
-<h1>
-  <img src="https://github.com/fernandoespinosa93/Kyojitsu/blob/main/docs/assests/kyojitsu-logo.svg" width="34" align="center">
-  Kyojitsu
-</h1>
 <p align="center">
   <img src="https://github.com/fernandoespinosa93/Kyojitsu/blob/main/docs/assests/kyojitsu-logo.svg" alt="Kyojitsu" width="96">
 </p>
