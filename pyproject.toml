@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kyojitsu"
+version = "3.8.1"
+description = "Motor reproducible de fuzzing evolutivo para evaluar guardrails de LLM"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+qa = ["pytest>=8", "playwright>=1.45"]
+
+[project.scripts]
+kyojitsu = "kyojitsu.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+[tool.setuptools.package-data]
+kyojitsu = ["web/*.html", "web/*.css", "web/*.js"]

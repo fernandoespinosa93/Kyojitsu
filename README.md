@@ -276,4 +276,4 @@ Consulta [CONTRIBUTING.md](CONTRIBUTING.md). Si una IA o agente va a modificar e
 
 ## Licencia
 
-Temporary public release: This repository is publicly accessible for demonstration and review associated with the Kyojitsu presentation. Public availability does not grant an open-source license. See [LICENSE](LICENSE).
+Este paquete no elige una licencia por ti. **Antes de publicarlo como repositorio público**, añade la licencia aprobada por el propietario del proyecto (por ejemplo, MIT, Apache-2.0 o una licencia interna) y valida que sea compatible con los datos y dependencias redistribuidas.
