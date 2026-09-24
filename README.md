@@ -178,7 +178,7 @@ Consulta [docs/METODOLOGIA.md](docs/METODOLOGIA.md) para el modelo de evaluació
 El reporte incluye:
 
 - resumen ejecutivo;
-- dona de resultados;
+- grafícas de resultados;
 - cobertura del alcance;
 - evolución por ronda;
 - estado por categoría;
@@ -198,13 +198,8 @@ Kyojitsu/
 ├─ src/kyojitsu/           Motor, targets, storage, assessment y Studio
 │  └─ web/                 HTML/CSS/JS de Studio y reportes
 ├─ tests/                  Pruebas unitarias y regresiones de releases
-├─ qa/                     QA de navegador y validaciones de release
 ├─ examples/               Campañas, targets y generadores de ejemplo
 ├─ docs/                   Arquitectura, metodología y operación
-├─ integrations/           Integraciones auxiliares
-├─ tools/                  Herramientas de auditoría
-├─ data/                   Corpus redistribuibles incluidos en el proyecto
-├─ runs/                   Salidas locales de campañas (ignorado por Git)
 ├─ AGENTS.md               Guía para IAs/agentes que modifiquen el código
 ├─ CONTRIBUTING.md         Flujo de contribución
 ├─ SECURITY.md             Modelo y reporte de seguridad
