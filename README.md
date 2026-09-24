@@ -1,5 +1,5 @@
 <h1>
-  <img src="docs/assets/kyojitsu-logo.svg" width="34" align="center">
+  <img src="https://github.com/fernandoespinosa93/Kyojitsu/blob/main/docs/assests/kyojitsu-logo.svg" width="34" align="center">
   Kyojitsu
 </h1>
 
