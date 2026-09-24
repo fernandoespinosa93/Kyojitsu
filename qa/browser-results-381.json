@@ -1,0 +1,16 @@
+{
+  "version": "3.8.1",
+  "checks": [
+    "Configuration panels use the full wizard width",
+    "Step 1 Next button stays compact",
+    "Fixture campaign completes through Studio",
+    "Result donut animates progressively when Overview appears",
+    "Coverage bars visibly grow on view entry",
+    "Category and technique charts animate on framework view entry",
+    "Replay tells the G0\u2192Gn lineage story with staged nodes and animated edges",
+    "Lineage panel preserves the dotted background",
+    "Report remains page-responsive on desktop, tablet and mobile",
+    "No JavaScript runtime exceptions"
+  ],
+  "javascript_errors": []
+}
