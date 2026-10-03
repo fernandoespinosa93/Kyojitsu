@@ -244,8 +244,6 @@ En Windows también puedes usar:
 run_self_test.bat
 ```
 
-El QA visual basado en Playwright se encuentra en `qa/` y no es obligatorio para ejecutar el producto.
-
 ## Seguridad operacional
 
 - Studio está pensado para ejecutarse en `127.0.0.1`.
@@ -257,16 +255,6 @@ El QA visual basado en Playwright se encuentra en `qa/` y no es obligatorio para
 - No confundas cobertura del ejercicio con certificación de cumplimiento.
 
 Lee [SECURITY.md](SECURITY.md) antes de desplegar o extender Kyojitsu.
-
-## Publicación en GitHub
-
-El repositorio incluye `.gitignore`, plantilla de Pull Request, plantillas de Issues y un workflow básico de CI. Antes de hacer público el proyecto:
-
-1. revisa que `runs/`, `.env`, bases SQLite y claves no estén staged;
-2. decide y añade una licencia apropiada para tu organización;
-3. revisa que los corpus incluidos puedan redistribuirse;
-4. ejecuta todas las pruebas;
-5. publica el contenido de la carpeta raíz del proyecto, no el ZIP como único archivo.
 
 ## Contribuir
 
