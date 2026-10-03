@@ -259,7 +259,3 @@ Lee [SECURITY.md](SECURITY.md) antes de desplegar o extender Kyojitsu.
 ## Contribuir
 
 Consulta [CONTRIBUTING.md](CONTRIBUTING.md). Si una IA o agente va a modificar el proyecto, primero debe leer [AGENTS.md](AGENTS.md).
-
-## Licencia
-
-Este paquete no elige una licencia por ti. **Antes de publicarlo como repositorio público**, añade la licencia aprobada por el propietario del proyecto (por ejemplo, MIT, Apache-2.0 o una licencia interna) y valida que sea compatible con los datos y dependencias redistribuidas.
